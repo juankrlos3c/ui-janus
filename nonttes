@@ -1,0 +1,27 @@
+winngston... libreria para logs..
+auth0
+routes
+
+load environments--- dotenv
+mongoose.. - nosql-mapper object
+knex... relational
+check(ORM)
+
+schema-inspector
+
+middleware- whenn the service is innvoqued post/delete/ interceptor...
+
+all services req, res,  all petitionns http post(req, res, next)
+
+apidoc
+
+continues integrations with github bitbucket... 
+
+nextjs
+
+redis
+
+----------
+  graphQL
+  prisma
+ ORM

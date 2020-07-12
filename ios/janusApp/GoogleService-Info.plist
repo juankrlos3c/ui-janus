@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>471845123354-ffsvgmb0731malqhnp5tohjigjaj398o.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.471845123354-ffsvgmb0731malqhnp5tohjigjaj398o</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>471845123354-96gfa81q0h84hcrtdbnbdist9t8rgdr8.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCxTmrzJfjxrD6-fCTW1feNU7UjGixvBuE</string>
+	<key>GCM_SENDER_ID</key>
+	<string>471845123354</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>org.reactjs.native.example.janusApp</string>
+	<key>PROJECT_ID</key>
+	<string>janusapp-559b2</string>
+	<key>STORAGE_BUCKET</key>
+	<string>janusapp-559b2.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:471845123354:ios:7ef624b0356d3f4cf7e8a3</string>
+	<key>DATABASE_URL</key>
+	<string>https://janusapp-559b2.firebaseio.com</string>
+</dict>
+</plist>
