@@ -52,3 +52,4 @@ locate in /ui-janus
 ```
 $ react-native run-android
 ```
+* to open the debbugger start the emulator and press cmd + m
