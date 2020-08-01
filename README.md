@@ -10,12 +10,16 @@ open xcode
 - open the folder ui-janus/ios
 
 # Set up Xcode
+```
 $ sudo gem install cocoapods
 $ brew install watchman
+```
+```
 $ cd ui-janus/ios
 $ pod install
 $ cd ..
 $ react-native run-ios
+```
 
 # Set up android
 ```
