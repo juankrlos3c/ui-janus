@@ -33,7 +33,7 @@ export default function BookItem({
                 <Avatar
                     size="small"
                     rounded
-                    title={getAuthorInitial(volumeInfo.authors)}
+                    title={getAuthorInitial(null)}
                     icon={{name: 'user', type: 'font-awesome'}}
                     containerStyle={styles.bookInfoAuthorPic}
                     activeOpacity={0.7}/>

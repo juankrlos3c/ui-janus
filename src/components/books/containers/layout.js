@@ -8,13 +8,12 @@ import {
 import BookItem from './../components/BookItem';
 
 const BOOKS_QUERY = gql`
-    query books($getBooksInput: any) {
-        User(getBooksInput: $getBooksInput) {
+    query Books($getBooksInput: GetBooksInput!) {
+        Books(getBooksInput: $getBooksInput) {
             id
             volumeInfo {
                 description
                 title
-                authors
                 imageLinks {
                   thumbnail
                 }
@@ -25,22 +24,19 @@ const BOOKS_QUERY = gql`
 
 export class BookLayout extends Component {
     render() {
-        const defaultParams = {
-            query: "a", 
-            maxResults: 10
-        };
+        const getBooksInput = {"query": "a", "maxResults": 10};
         return (
             <React.Fragment>
-            <Query query={BOOKS_QUERY} variables={{defaultParams}}>
+            <Query query={BOOKS_QUERY} variables={{getBooksInput}}>
                 {({ loading, error, data }) => {
                     if (loading) return <ActivityIndicator/>;
                     if (error) console.log(error);
                     return <React.Fragment>
                             <FlatList
-                            data={data.books}
+                            data={data.Books}
                             renderItem={({ item, index, separators }) => (
                                 <TouchableHighlight
-                                    key={item.key}
+                                    key={item.id}
                                     onShowUnderlay={separators.highlight}
                                     onHideUnderlay={separators.unhighlight}>
                                     <BookItem key={index} book={item}></BookItem>

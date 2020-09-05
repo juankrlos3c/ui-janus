@@ -23,7 +23,7 @@ export const Initial = () => {
         <React.Fragment>
             <Query query={USER_QUERY} variables={{googleId}}>
                 {({ loading, error, data }) => {
-                    const userInfo = data ? data.user.givenName : 'No User';
+                    const userInfo = data ? data.User.givenName : null;
                     return (initialLoading || loading) ? <InitLoading></InitLoading> : <Home user={userInfo}></Home>
                 }}
             </Query>

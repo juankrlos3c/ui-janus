@@ -23,7 +23,7 @@ const errorLink = onError(({ graphQLErrors, networkError }) => {
   }
 });
 const link = new HttpLink({
-  uri: 'http://10.0.2.2:5000/graphql',
+  uri: 'http://924f06be1471.ngrok.io/graphql',
   errorLink
 });
 
