@@ -9,8 +9,8 @@ import {
 } from 'react-native';
 
 const USER_QUERY = gql`
-    query UserQuery($googleId: String!) {
-        user(googleId: $googleId) {
+    query User($googleId: String!) {
+        User(googleId: $googleId) {
             givenName,
             photoUri
         }
@@ -23,7 +23,8 @@ export const Initial = () => {
         <React.Fragment>
             <Query query={USER_QUERY} variables={{googleId}}>
                 {({ loading, error, data }) => {
-                    return (initialLoading || loading) ? <InitLoading></InitLoading> : <Home user={data.user.givenName || ''}></Home>
+                    const userInfo = data ? data.User.givenName : null;
+                    return (initialLoading || loading) ? <InitLoading></InitLoading> : <Home user={userInfo}></Home>
                 }}
             </Query>
         </React.Fragment>
