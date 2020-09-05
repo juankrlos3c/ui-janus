@@ -33,7 +33,7 @@ export default function BookItem({
                 <Avatar
                     size="small"
                     rounded
-                    title={getAuthorInitial(null)}
+                    title={getAuthorInitial(null)} //Wait BE to include the author param, then add the author property
                     icon={{name: 'user', type: 'font-awesome'}}
                     containerStyle={styles.bookInfoAuthorPic}
                     activeOpacity={0.7}/>
