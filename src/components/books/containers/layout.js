@@ -8,8 +8,8 @@ import {
 import BookItem from './../components/BookItem';
 
 const BOOKS_QUERY = gql`
-    query BooksQuery {
-        books {
+    query books($getBooksInput: any) {
+        User(getBooksInput: $getBooksInput) {
             id
             volumeInfo {
                 description
@@ -25,9 +25,13 @@ const BOOKS_QUERY = gql`
 
 export class BookLayout extends Component {
     render() {
+        const defaultParams = {
+            query: "a", 
+            maxResults: 10
+        };
         return (
             <React.Fragment>
-            <Query query={BOOKS_QUERY}>
+            <Query query={BOOKS_QUERY} variables={{defaultParams}}>
                 {({ loading, error, data }) => {
                     if (loading) return <ActivityIndicator/>;
                     if (error) console.log(error);
